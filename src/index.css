@@ -4,3 +4,17 @@
 
 /* [#199FA0] */
 /* [#1F1E24] */
+
+::-webkit-scrollbar{
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1F1E24;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #199FA0;
+    border-radius: 10px;
+}
