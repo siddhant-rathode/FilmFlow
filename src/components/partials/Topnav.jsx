@@ -23,7 +23,7 @@ const Topnav = () => {
   }, [query])
   
   return (
-    <div className='w-full h-[10vh] relative flex justify-start items-center ml-[30%]'>
+    <div className='w-full h-[10vh] relative flex justify-center items-center '>
         <i className="text-xl text-zinc-400 ri-search-2-line"></i>
         <input className='w-[400px] text-zinc-300 mx-10 text-xl outline-none border-none bg-transparent' 
           type="text" 
@@ -34,11 +34,11 @@ const Topnav = () => {
         {query.length > 0 && (
           <i
             onClick={() => setquery("")}
-            className="text-xl text-zinc-400 ri-close-fill">
+            className="absolute right-[28%] text-xl text-zinc-400 ri-close-fill">
           </i> 
         )}
 
-        <div className='w-[400px] max-h-[50vh] absolute bg-gray-300 top-[80%] overflow-auto rounded ml-[60px]'>
+        <div className='w-[400px] max-h-[50vh] absolute bg-gray-300 top-[100%] ml-[20px] overflow-auto rounded '>
           {searches.map((s,i) =>(
             <Link key={i} className='hover:text-white hover:bg-zinc-600 duration-300 text-zinc-500 inline-block w-full p-4 flex justify-start items-center border-b-2'>
               <img className='w-[10vh] h-[10vh] object-cover rounded-lg mr-5' 
